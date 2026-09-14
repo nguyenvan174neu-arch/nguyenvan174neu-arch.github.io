@@ -81,12 +81,75 @@
       margin-bottom: 5px;
     }
 
+    /* Writing section */
+
+    .writing-intro {
+      color: #555;
+      margin-bottom: 35px;
+    }
+
+    .writing-item {
+      display: flex;
+      gap: 35px;
+      padding: 20px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .writing-date {
+      width: 110px;
+      flex-shrink: 0;
+      color: #777;
+      font-size: 15px;
+    }
+
+    .writing-title {
+      font-size: 19px;
+      font-weight: 500;
+      color: #222;
+    }
+
     footer {
       text-align: center;
       padding: 40px;
       border-top: 1px solid #eee;
       color: #777;
       margin-top: 60px;
+    }
+
+    /* Mobile-friendly layout */
+
+    @media (max-width: 700px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav div:last-child {
+        margin-top: 15px;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 15px;
+      }
+
+      .hero {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .writing-item {
+        flex-direction: column;
+        gap: 3px;
+      }
+
+      .writing-date {
+        width: auto;
+      }
     }
   </style>
 </head>
@@ -101,6 +164,7 @@
     <a href="#research">Research</a>
     <a href="#awards">Awards</a>
     <a href="#teaching">Teaching</a>
+    <a href="#writing">Writing</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -127,28 +191,28 @@
   <h2>About</h2>
 
   <p>
-    I am a PhD Candidate in Finance at Victoria University of Wellington, 
-    with a strong background in financial analysis, research, and applied 
-    problem-solving. My research focuses on climate finance, carbon markets, 
-    emissions trading schemes (ETS), climate regulation, and market behaviour, 
+    I am a PhD Candidate in Finance at Victoria University of Wellington,
+    with a strong background in financial analysis, research, and applied
+    problem-solving. My research focuses on climate finance, carbon markets,
+    emissions trading schemes (ETS), climate regulation, and market behaviour,
     using quantitative methods and large financial and administrative datasets.
   </p>
 
   <p>
-    Alongside my research, I have experience in university teaching, stakeholder 
-    coordination, and academic administration, including coordinating across 
-    multiple stakeholders and supporting faculty leadership. My experience spans 
-    regulatory analysis, policy evaluation, and applied empirical research. 
-    I value intellectual curiosity, resilience, continuous learning, and 
-    collaboration, and enjoy turning rigorous analysis into clear insights 
+    Alongside my research, I have experience in university teaching, stakeholder
+    coordination, and academic administration, including coordinating across
+    multiple stakeholders and supporting faculty leadership. My experience spans
+    regulatory analysis, policy evaluation, and applied empirical research.
+    I value intellectual curiosity, resilience, continuous learning, and
+    collaboration, and enjoy turning rigorous analysis into clear insights
     that support policy and real-world decision-making.
   </p>
 
   <p>
-    Outside of work, I enjoy reading, writing, jogging, hiking, badminton, 
-    and dancing, as well as exploring different cultures and histories. 
-    I try to approach life with curiosity, optimism, and an open mind, and 
-    I enjoy new experiences that challenge me to learn, grow, and see the 
+    Outside of work, I enjoy reading, writing, jogging, hiking, badminton,
+    and dancing, as well as exploring different cultures and histories.
+    I try to approach life with curiosity, optimism, and an open mind, and
+    I enjoy new experiences that challenge me to learn, grow, and see the
     world from different perspectives.
   </p>
 
@@ -160,12 +224,12 @@
   <h2>Research</h2>
 
   <p>
-    My research interests include climate finance, carbon markets, 
+    My research interests include climate finance, carbon markets,
     emissions trading schemes (ETS), climate regulation, and market behaviour.
   </p>
 
   <p>
-    Details of my current research projects and working papers will be 
+    Details of my current research projects and working papers will be
     updated as they become publicly available.
   </p>
 
@@ -200,6 +264,32 @@
     Teaching and tutoring experience in Corporate Finance,
     Banking, and Finance.
   </p>
+
+</section>
+
+
+<section id="writing">
+
+  <h2>Writing</h2>
+
+  <p class="writing-intro">
+    Reflections on research, policy, books, learning, and life.
+  </p>
+
+  <div class="writing-item">
+    <div class="writing-date">14 Sep 2026</div>
+    <div class="writing-title">Why curiosity matters in research</div>
+  </div>
+
+  <div class="writing-item">
+    <div class="writing-date">2 Sep 2026</div>
+    <div class="writing-title">What I learned from presenting research to policymakers</div>
+  </div>
+
+  <div class="writing-item">
+    <div class="writing-date">20 Aug 2026</div>
+    <div class="writing-title">Books, ideas, and the way we see the world</div>
+  </div>
 
 </section>
 
