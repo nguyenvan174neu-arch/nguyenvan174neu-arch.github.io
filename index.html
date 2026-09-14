@@ -38,15 +38,16 @@
       color: #1f5f8b;
     }
 
+    /* Hero section */
+
     .hero {
       padding: 80px 8%;
       max-width: 1000px;
       margin: auto;
-
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 60px;
+      gap: 50px;
     }
 
     .hero-text {
@@ -76,13 +77,15 @@
     }
 
     .hero-photo img {
-      width: 280px;
-      height: 350px;
+      width: 300px;
+      height: 375px;
       object-fit: cover;
       object-position: center 30%;
       border-radius: 22px;
       display: block;
     }
+
+    /* Main sections */
 
     section {
       max-width: 1000px;
@@ -130,6 +133,19 @@
       color: #222;
     }
 
+    /* Contact links */
+
+    #contact a {
+      color: #1f5f8b;
+      text-decoration: none;
+    }
+
+    #contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+
     footer {
       text-align: center;
       padding: 40px;
@@ -141,6 +157,7 @@
     /* Mobile-friendly layout */
 
     @media (max-width: 700px) {
+
       nav {
         flex-direction: column;
         align-items: flex-start;
@@ -181,13 +198,18 @@
         width: auto;
       }
     }
+
   </style>
 </head>
+
 
 <body>
 
 <nav>
-  <div class="name">Van Nguyen Thi</div>
+
+  <div class="name">
+    Van Nguyen Thi
+  </div>
 
   <div>
     <a href="#about">About</a>
@@ -197,6 +219,7 @@
     <a href="#writing">Writing</a>
     <a href="#contact">Contact</a>
   </div>
+
 </nav>
 
 
@@ -217,8 +240,13 @@
 
   </div>
 
+
   <div class="hero-photo">
-    <img src="profile.jpg" alt="Van Nguyen Thi">
+
+    <img
+      src="profile.jpg"
+      alt="Van Nguyen Thi">
+
   </div>
 
 </div>
@@ -284,11 +312,13 @@
   </p>
 
   <p>
-    Graduate Study Award, New Zealand Association of Economists (NZAE) Conference, 2025
+    Graduate Study Award,
+    New Zealand Association of Economists (NZAE) Conference, 2025
   </p>
 
   <p>
-    Best PhD Paper, Doctoral Colloquium - Wellington School of Business and Government, VUW, 2025
+    Best PhD Paper, Doctoral Colloquium -
+    Wellington School of Business and Government, VUW, 2025
   </p>
 
 </section>
@@ -314,19 +344,43 @@
     Reflections on research, policy, books, learning, and life.
   </p>
 
-  <div class="writing-item">
-    <div class="writing-date">14 Sep 2026</div>
-    <div class="writing-title">Why curiosity matters in research</div>
-  </div>
 
   <div class="writing-item">
-    <div class="writing-date">2 Sep 2026</div>
-    <div class="writing-title">What I learned from presenting research to policymakers</div>
+
+    <div class="writing-date">
+      14 Sep 2026
+    </div>
+
+    <div class="writing-title">
+      Why curiosity matters in research
+    </div>
+
   </div>
 
+
   <div class="writing-item">
-    <div class="writing-date">20 Aug 2026</div>
-    <div class="writing-title">Books, ideas, and the way we see the world</div>
+
+    <div class="writing-date">
+      2 Sep 2026
+    </div>
+
+    <div class="writing-title">
+      What I learned from presenting research to policymakers
+    </div>
+
+  </div>
+
+
+  <div class="writing-item">
+
+    <div class="writing-date">
+      20 Aug 2026
+    </div>
+
+    <div class="writing-title">
+      Books, ideas, and the way we see the world
+    </div>
+
   </div>
 
 </section>
@@ -351,20 +405,23 @@
 
   <p>
     LinkedIn:
-    <a href="https://www.linkedin.com/in/van-nguyen-thi-30a63431b/"
-       target="_blank"
-       rel="noopener noreferrer">
+    <a
+      href="https://www.linkedin.com/in/van-nguyen-thi-30a63431b/"
+      target="_blank"
+      rel="noopener noreferrer">
       Van Nguyen Thi
     </a>
   </p>
 
 </section>
 
+
 <footer>
 
   © 2026 Van Nguyen Thi
 
 </footer>
+
 
 </body>
 </html>
