@@ -81,32 +81,22 @@
 
     nav {
       min-height: 78px;
-
       padding: 0 7%;
-
       display: flex;
       align-items: center;
       justify-content: space-between;
-
       background: rgba(255,255,255,0.97);
-
       border-bottom: 1px solid rgba(0,0,0,0.04);
-
       position: relative;
-
       z-index: 100;
     }
 
 
     nav .name {
       font-family: "Libre Baskerville", Georgia, serif;
-
       font-size: 21px;
-
       font-weight: 700;
-
       color: var(--deep-blue);
-
       white-space: nowrap;
     }
 
@@ -121,15 +111,10 @@
 
     nav a {
       text-decoration: none;
-
       color: #26333d;
-
       font-size: 14px;
-
       font-weight: 500;
-
       margin-left: 28px;
-
       transition: color 0.2s ease;
     }
 
@@ -146,46 +131,33 @@
 
     .cover {
       position: relative;
-
       width: 100%;
-
       height: 255px;
-
       overflow: hidden;
-
       background: #e7eef1;
     }
 
 
     .cover-image {
       width: 100%;
-
       height: 100%;
-
       display: block;
-
       object-fit: cover;
-
       object-position: center 48%;
-
       filter:
         saturate(0.68)
         contrast(0.88)
         brightness(1.08);
-
       transform: scale(1.01);
     }
 
 
     .cover::after {
       content: "";
-
       position: absolute;
-
       inset: 0;
 
       background:
-
         linear-gradient(
           90deg,
           rgba(244,248,250,0.52) 0%,
@@ -206,44 +178,27 @@
 
     .cover-quote {
       position: absolute;
-
       left: 8.5%;
-
       top: 49%;
-
       transform: translateY(-50%);
-
       z-index: 2;
-
       font-family: "Libre Baskerville", Georgia, serif;
-
       font-size: 14px;
-
       font-style: italic;
-
       font-weight: 400;
-
       line-height: 1.85;
-
       color: #315d70;
-
       opacity: 0.62;
-
       letter-spacing: 0;
     }
 
 
     .cover-quote::after {
       content: "";
-
       display: block;
-
       width: 48px;
-
       height: 1px;
-
       margin-top: 14px;
-
       background: rgba(49,93,112,0.42);
     }
 
@@ -255,11 +210,9 @@
 
     .hero-wrap {
       position: relative;
-
       overflow: hidden;
 
       background:
-
         linear-gradient(
           120deg,
           #f6f8f7 0%,
@@ -271,44 +224,28 @@
 
     .hero-wrap::before {
       content: "";
-
       position: absolute;
-
       width: 260px;
-
       height: 260px;
-
       left: -115px;
-
       top: 40px;
-
       border-radius: 50%;
-
       background: rgba(63,102,116,0.07);
-
       filter: blur(60px);
     }
 
 
     .hero {
       max-width: var(--max-width);
-
       margin: auto;
-
-    padding: 60px 30px 82px;
-
+      padding: 60px 30px 82px;
       display: grid;
-
       grid-template-columns:
         minmax(0, 1fr)
         285px;
-
       gap: 80px;
-
       align-items: center;
-
       position: relative;
-
       z-index: 2;
     }
 
@@ -320,69 +257,53 @@
 
     .hero h1 {
       margin: 0 0 15px;
-
       font-family: "Libre Baskerville", Georgia, serif;
-
       font-size: 52px;
-
       font-weight: 700;
-
       line-height: 1.12;
-
       letter-spacing: -1px;
-
       color: var(--deep-blue);
     }
 
 
     .hero h2 {
       margin: 0;
-
       font-size: 19px;
-
       line-height: 1.7;
-
       font-weight: 400;
-
       color: #59656e;
     }
 
 
     .research-interest {
       margin-top: 26px;
-
       color: var(--accent);
-
       font-weight: 600;
-
       font-size: 15.5px;
-
       letter-spacing: 0.05px;
     }
 
 
     .hero-positioning {
       max-width: 650px;
-
       margin: 19px 0 0;
-
       color: #3f4b53;
-
       font-size: 15.5px;
-
       line-height: 1.82;
     }
 
-.hero-tagline {
-  margin: 12px 0 0;
-  font-family: "Libre Baskerville", Georgia, serif;
-  font-size: 13.5px;
-  line-height: 1.7;
-  font-style: italic;
-  font-weight: 400;
-  color: #6f7b83;
-  opacity: 0.72;
-}
+
+    .hero-tagline {
+      margin: 12px 0 0;
+      font-family: "Libre Baskerville", Georgia, serif;
+      font-size: 13.5px;
+      line-height: 1.7;
+      font-style: italic;
+      font-weight: 400;
+      color: #6f7b83;
+      opacity: 0.72;
+    }
+
 
     .hero-actions {
       margin-top: 27px;
@@ -391,27 +312,16 @@
 
     .cv-button {
       display: inline-flex;
-
       align-items: center;
-
       gap: 8px;
-
       padding: 10px 17px;
-
       border: 1px solid var(--accent);
-
       border-radius: 6px;
-
       background: var(--accent);
-
       color: white;
-
       text-decoration: none;
-
       font-size: 14px;
-
       font-weight: 500;
-
       transition:
         background 0.2s ease,
         transform 0.2s ease;
@@ -420,7 +330,6 @@
 
     .cv-button:hover {
       background: #124f6b;
-
       transform: translateY(-1px);
     }
 
@@ -430,27 +339,19 @@
 
     .hero-photo {
       display: flex;
-
       justify-content: center;
     }
 
 
     .hero-photo img {
       width: 285px;
-
       height: 370px;
-
       object-fit: cover;
-
       object-position: center 30%;
-
       border-radius: 14px;
-
       border: 1px solid rgba(255,255,255,0.75);
-
       box-shadow:
         0 18px 45px rgba(27,55,70,0.08);
-
       filter:
         saturate(0.82)
         contrast(0.94)
@@ -465,35 +366,25 @@
 
     section {
       max-width: var(--max-width);
-
       margin: auto;
-
       padding: 72px 30px;
-
       border-top: 1px solid var(--border);
     }
 
 
     section h2 {
       font-family: "Libre Baskerville", Georgia, serif;
-
       font-size: 29px;
-
       line-height: 1.3;
-
       font-weight: 700;
-
       margin: 0 0 30px;
-
       color: var(--deep-blue);
     }
 
 
     section p {
       max-width: 820px;
-
       margin-top: 0;
-
       margin-bottom: 20px;
     }
 
@@ -505,7 +396,6 @@
 
     #about p {
       color: #38454e;
-
       font-size: 16px;
     }
 
@@ -517,7 +407,6 @@
 
     #research {
       max-width: none;
-
       background: var(--soft-blue);
 
       padding-left:
@@ -535,53 +424,39 @@
 
     .research-paper h3 {
       font-family: "Libre Baskerville", Georgia, serif;
-
       font-size: 20px;
-
       line-height: 1.5;
-
       margin: 0 0 7px;
-
       color: var(--deep-blue);
     }
 
 
     .paper-status {
       color: var(--accent);
-
       font-size: 14px;
-
       font-style: italic;
-
       font-weight: 500;
-
       margin-bottom: 14px;
     }
 
 
     .paper-description {
       color: #44515a;
-
       margin-bottom: 14px;
     }
 
 
     .paper-links {
       display: flex;
-
       gap: 9px;
-
       align-items: center;
-
       font-size: 14px;
     }
 
 
     .paper-links a {
       color: var(--accent);
-
       text-decoration: none;
-
       font-weight: 600;
     }
 
@@ -598,51 +473,38 @@
 
     .engagement-intro {
       color: #3f4b53;
-
       margin-bottom: 30px;
     }
 
 
     .engagement-item {
       display: grid;
-
       grid-template-columns: 90px 1fr;
-
       gap: 26px;
-
       padding: 20px 0;
-
       border-bottom: 1px solid var(--border);
-
       max-width: 860px;
     }
 
 
     .engagement-year {
       color: var(--accent);
-
       font-size: 14px;
-
       font-weight: 600;
     }
 
 
     .engagement-title {
       font-family: "Libre Baskerville", Georgia, serif;
-
       font-size: 17px;
-
       font-weight: 700;
-
       color: var(--deep-blue);
     }
 
 
     .engagement-org {
       color: var(--muted);
-
       font-size: 15px;
-
       margin-top: 3px;
     }
 
@@ -654,7 +516,6 @@
 
     #awards {
       max-width: none;
-
       background: var(--soft-bg);
 
       padding-left:
@@ -667,44 +528,32 @@
 
     .award-item {
       display: grid;
-
       grid-template-columns: 90px 1fr;
-
       gap: 26px;
-
       padding: 22px 0;
-
       border-bottom: 1px solid var(--border);
-
       max-width: 860px;
     }
 
 
     .award-year {
       color: var(--accent);
-
       font-size: 14px;
-
       font-weight: 600;
     }
 
 
     .award-title {
       font-family: "Libre Baskerville", Georgia, serif;
-
       font-size: 17px;
-
       font-weight: 700;
-
       color: var(--deep-blue);
     }
 
 
     .award-org {
       color: var(--muted);
-
       font-size: 15px;
-
       margin-top: 4px;
     }
 
@@ -726,7 +575,6 @@
 
     #writing {
       max-width: none;
-
       background: var(--soft-blue);
 
       padding-left:
@@ -739,43 +587,47 @@
 
     .writing-intro {
       color: var(--muted);
+      margin-bottom: 30px;
     }
 
 
     .writing-item {
       display: grid;
-
       grid-template-columns: 120px 1fr;
-
       gap: 26px;
-
       padding: 22px 0;
-
       border-bottom: 1px solid var(--border);
-
       max-width: 860px;
     }
 
 
     .writing-date {
       color: var(--muted);
-
       font-size: 14px;
+    }
+
+
+    /* PhD Life series label */
+
+    .writing-series {
+      color: var(--accent);
+      font-size: 12.5px;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
     }
 
 
     .writing-title {
       font-family: "Libre Baskerville", Georgia, serif;
-
       font-size: 18px;
-
       margin-bottom: 5px;
     }
 
 
     .writing-title a {
       color: var(--deep-blue);
-
       text-decoration: none;
     }
 
@@ -787,20 +639,15 @@
 
     .writing-subtitle {
       color: var(--muted);
-
       font-size: 15px;
-
       margin-bottom: 6px;
     }
 
 
     .read-link {
       color: var(--accent);
-
       text-decoration: none;
-
       font-size: 14px;
-
       font-weight: 600;
     }
 
@@ -817,7 +664,6 @@
 
     #contact a {
       color: var(--accent);
-
       text-decoration: none;
     }
 
@@ -834,13 +680,9 @@
 
     footer {
       border-top: 1px solid var(--border);
-
       text-align: center;
-
       padding: 28px;
-
       color: #899198;
-
       font-size: 13px;
     }
 
@@ -854,25 +696,20 @@
 
       nav {
         padding: 18px 6%;
-
         flex-direction: column;
-
         align-items: flex-start;
       }
 
 
       nav .links {
         margin-top: 12px;
-
         justify-content: flex-start;
       }
 
 
       nav a {
         margin-left: 0;
-
         margin-right: 16px;
-
         line-height: 2.2;
       }
 
@@ -889,22 +726,16 @@
 
       .cover-quote {
         left: 7%;
-
         top: 50%;
-
         font-size: 12px;
-
         line-height: 1.8;
-
         opacity: 0.58;
       }
 
 
       .hero {
         grid-template-columns: 1fr;
-
         gap: 36px;
-
         padding: 55px 7% 65px;
       }
 
@@ -916,7 +747,6 @@
 
       .hero-photo {
         order: 1;
-
         justify-content: flex-start;
       }
 
@@ -933,7 +763,6 @@
 
       .hero-photo img {
         width: 245px;
-
         height: 315px;
       }
 
@@ -947,7 +776,6 @@
       #awards,
       #writing {
         padding-left: 7%;
-
         padding-right: 7%;
       }
 
@@ -956,7 +784,6 @@
       .award-item,
       .writing-item {
         grid-template-columns: 1fr;
-
         gap: 4px;
       }
 
@@ -965,7 +792,6 @@
   </style>
 
 </head>
-
 
 
 <body>
@@ -1078,16 +904,15 @@
       </div>
 
 
-     <p class="hero-positioning">
-  I study how climate policy and carbon markets interact with firms and financial markets,
-  with a particular interest in research that can inform policy and real-world decision-making.
-</p>
-
-<p class="hero-tagline">
-  Research for a more resilient and sustainable tomorrow.
-</p>
+      <p class="hero-positioning">
+        I study how climate policy and carbon markets interact with firms and financial markets,
+        with a particular interest in research that can inform policy and real-world decision-making.
+      </p>
 
 
+      <p class="hero-tagline">
+        Research for a more resilient and sustainable tomorrow.
+      </p>
 
     </div>
 
@@ -1416,7 +1241,6 @@
 
 
 <!-- Writing -->
-<!-- Writing -->
 
 <section id="writing">
 
@@ -1424,12 +1248,14 @@
     Writing
   </h2>
 
+
   <p class="writing-intro">
     Reflections on research, policy, books, learning, and life.
   </p>
 
 
-      <!-- PhD Life Episode 01 -->
+
+  <!-- PhD Life Episode 01 -->
 
   <div class="writing-item">
 
@@ -1437,7 +1263,13 @@
       September 2026
     </div>
 
+
     <div>
+
+      <div class="writing-series">
+        PhD Life · Episode 01
+      </div>
+
 
       <div class="writing-title">
 
@@ -1447,22 +1279,27 @@
 
       </div>
 
+
       <div class="writing-subtitle">
-        PhD Life · Episode 01 — Curiosity, new places, new people, and the unexpected
-        things a PhD teaches us beyond research.
+        On curiosity, discovery, and beginning a PhD abroad.
       </div>
+
 
       <a
         class="read-link"
         href="phd-life-01.html">
+
         Read episode →
+
       </a>
 
     </div>
 
   </div>
-  
-  <!-- Article 1 -->
+
+
+
+  <!-- When Dreams Find Their Way to You -->
 
   <div class="writing-item">
 
@@ -1470,48 +1307,46 @@
       September 2026
     </div>
 
-    <!-- PhD Life Episode 01 -->
 
-<div class="writing-item">
+    <div>
 
-  <div class="writing-date">
-    September 2026
-  </div>
+      <div class="writing-title">
 
-  <div>
+        <a href="writing-dreams.html">
+          When Dreams Find Their Way to You
+        </a>
 
-    <div class="writing-series">
-      PhD Life · Episode 01
-    </div>
+      </div>
 
-    <div class="writing-title">
-      <a href="phd-life-01.html">
-        Curious Enough to Begin
+
+      <div class="writing-subtitle">
+        A reflection on dreams, passion, PhD life, and the unexpected
+        ways opportunities sometimes find us.
+      </div>
+
+
+      <a
+        class="read-link"
+        href="writing-dreams.html">
+
+        Read essay →
+
       </a>
-    </div>
 
-    <div class="writing-subtitle">
-      On curiosity, discovery, and beginning a PhD abroad.
     </div>
-
-    <a
-      class="read-link"
-      href="phd-life-01.html">
-      Read episode →
-    </a>
 
   </div>
 
-</div>
 
 
-  <!-- Article 2 -->
+  <!-- What I Learned Between the Conference Sessions -->
 
   <div class="writing-item">
 
     <div class="writing-date">
       September 2026
     </div>
+
 
     <div>
 
@@ -1523,14 +1358,18 @@
 
       </div>
 
+
       <div class="writing-subtitle">
         A few reflections from AFAANZ 2025 in Brisbane.
       </div>
 
+
       <a
         class="read-link"
         href="writing-conference.html">
+
         Read essay →
+
       </a>
 
     </div>
@@ -1538,6 +1377,7 @@
   </div>
 
 </section>
+
 
 
 <!-- Contact -->
