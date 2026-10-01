@@ -789,7 +789,22 @@
 
     }
 
-  </style>
+  
+  .writing-more-button {
+    margin-top: 0.75rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .older-writing {
+    margin-top: 0.5rem;
+  }
+
+</style>
 
 </head>
 
@@ -1292,6 +1307,12 @@
   </div>
 
 
+  <button class="writing-more-button" type="button" aria-expanded="false" aria-controls="older-writing" onclick="toggleOlderWriting(this)">
+    Read More ↓
+  </button>
+
+  <div id="older-writing" class="older-writing" hidden>
+
   <!-- PhD Life Episode 01 -->
 
   <div class="writing-item">
@@ -1369,6 +1390,19 @@
     </div>
 
   </div>
+
+
+  </div>
+
+  <script>
+    function toggleOlderWriting(button) {
+      const olderWriting = document.getElementById('older-writing');
+      const isHidden = olderWriting.hidden;
+      olderWriting.hidden = !isHidden;
+      button.setAttribute('aria-expanded', String(isHidden));
+      button.textContent = isHidden ? 'Show Less ↑' : 'Read More ↓';
+    }
+  </script>
 
 </section>
 
